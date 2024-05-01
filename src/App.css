@@ -140,7 +140,7 @@
   border: unset;
   overflow: hidden;
   transition: all 300ms linear;
-  background: linear-gradient(146.43deg,  #ff6b0a 1.77%,  #ff2801 62.74%);
+  background: linear-gradient(146.43deg, #ff6b0a 1.77%, #ff2801 62.74%);
 }
 .navbtn {
   padding: 10px 12px;
@@ -148,7 +148,7 @@
   border: unset;
   margin-left: -6px;
   transition: all 300ms linear;
-  background: linear-gradient(146.43deg,  #ff6b0a 1.77%,  #ff2801 62.74%);
+  background: linear-gradient(146.43deg, #ff6b0a 1.77%, #ff2801 62.74%);
 }
 .commonbtn::after,
 .navbtn::after {
@@ -165,13 +165,13 @@
 }
 
 .commonbtn:hover,
-.navbtn:hover{
+.navbtn:hover {
   box-shadow: 0px 0px 12px #ff2801;
 }
 
 .commonbtn:hover::after,
-.navbtn:hover::after{
-opacity: 0;
+.navbtn:hover::after {
+  opacity: 0;
 }
 .fw-900 {
   font-weight: 900;
@@ -191,7 +191,7 @@ opacity: 0;
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
+  background: linear-gradient(146.43deg, #ff2801 1.77%, #ff6b0a 62.74%);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
@@ -244,13 +244,13 @@ opacity: 0;
     transform: translate(24px, 0);
   }
 }
-.backtotop{
+.backtotop {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background: linear-gradient(126.26deg, #ff2801 10.62%, #ff6b0a 77.73%);
 }
-.backtotopbtn{
+.backtotopbtn {
   right: 1%;
   bottom: 1%;
 }
@@ -313,24 +313,24 @@ opacity: 0;
   max-width: 996px;
   max-height: 476px;
 }
-.pagelinks{
-  transition: all .5s linear;
+.pagelinks {
+  transition: all 0.5s linear;
 }
 .pagelinks:hover {
   background: linear-gradient(126.26deg, #ff2801 10.62%, #ff6b0a 77.73%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.socialmediasvg{
+.socialmediasvg {
   width: 25px;
 }
-.socialmedia{
-padding: 6px 3px;
-gap: unset;
-max-width: 50px;
-top: 30%;
-border-radius: 1.78px;
-z-index: 2;
+.socialmedia {
+  padding: 6px 3px;
+  gap: unset;
+  max-width: 50px;
+  top: 30%;
+  border-radius: 1.78px;
+  z-index: 2;
 }
 /* =========================== WHAT =========================== */
 
@@ -349,6 +349,16 @@ z-index: 2;
   min-height: 223px;
   padding-left: 13px;
   height: unset;
+  transition: all 300ms linear;
+}
+.s3-card p,
+.s3-card svg path {
+  transition: all 300ms linear;
+}
+.s3-card:hover p,
+.s3-card:hover svg path {
+  color: #ff6b0a;
+  fill: #ff2801;
 }
 .s3-card2-pd {
   padding-left: 13px;
@@ -359,7 +369,7 @@ z-index: 2;
   max-height: 166px;
   filter: blur(10px);
 }
-.card2-s3{
+.card2-s3 {
   top: 6%;
 }
 .s3-img {
@@ -455,28 +465,29 @@ z-index: 2;
   background: #070808;
 }
 /* =========================== ELLIPSE =========================== */
-.arrowelipse1{
+.arrowelipse1 {
   right: -3%;
-  top: 13%;
+  top: -12%;
   z-index: 0;
 }
-.arrowelippse2{
+.arrowelippse2 {
   left: 2%;
-  bottom: 28%;
+  bottom: unset;
+  top: 6%;
   z-index: 0;
 }
-.arrowellipse3{
+.arrowellipse3 {
   right: 4%;
-  bottom: 19%;
+  bottom: 0%;
 }
-.arrowelispse4{
+.arrowelispse4 {
   left: 6%;
   top: -7%;
 }
-.arrowsvgwidth{
+.arrowsvgwidth {
   width: 50px;
 }
-.arrowellipse5{
+.arrowellipse5 {
   bottom: 16%;
   right: 4%;
 }
@@ -523,18 +534,18 @@ z-index: 2;
   .section2-padding {
     padding: 80px 0;
   }
-  .backtotop{
+  .backtotop {
     width: 50px;
     height: 50px;
   }
   .swiper-button-prev,
-.swiper-button-next {
- display: block !important;
-}
-  .arrowsvgwidth{
+  .swiper-button-next {
+    display: block !important;
+  }
+  .arrowsvgwidth {
     width: 104px;
   }
- 
+
   .s7-padding {
     padding: 35px 0 66px 0;
   }
@@ -589,19 +600,25 @@ z-index: 2;
   .s6-padding {
     padding: 104px 0 64px 0;
   }
-  .socialmediasvg{
+  .socialmediasvg {
     width: 37px;
   }
-  .socialmedia{
+  .socialmedia {
     padding: 18px 7px;
     gap: 11px;
     max-width: 50px;
-    }
+  }
 }
 
 @media (min-width: 768px) {
   .gap-nav-links {
     gap: 32px;
+  }
+  .arrowellipse3 {
+    bottom: 19%;
+  }
+  .arrowelipse1 {
+    top: 13%;
   }
   .swiper-button-next {
     right: 45% !important;
@@ -716,6 +733,12 @@ z-index: 2;
     --lh-72: 72px;
     --lh-22: 22px;
   }
+  .arrowelippse2 {
+    left: 2%;
+    bottom: 28%;
+    top: unset;
+    z-index: 0;
+  }
 }
 @media (min-width: 1250px) {
   .swiper-button-next {
@@ -749,7 +772,7 @@ z-index: 2;
     min-height: 100vh;
     left: 0;
     width: 100%;
-background: #070808;
+    background: #070808;
     z-index: 11;
     transition: all 300ms linear !important;
   }
