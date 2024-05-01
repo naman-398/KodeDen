@@ -8,8 +8,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Commonbtn from '../commonbtn/Commonbtn';
-import { useRef, useState } from 'react';
-
 
 const Slidersection = () => {
 
