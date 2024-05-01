@@ -410,6 +410,9 @@
   min-height: 389px;
   height: 100%;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .sliderimg {
   width: 52px;
   height: 52px;
@@ -422,6 +425,7 @@
   border-radius: 50% !important;
   border: unset !important;
   top: 14% !important;
+  z-index: 1 !important;
 }
 .swiper-slider {
   width: 365px !important;
